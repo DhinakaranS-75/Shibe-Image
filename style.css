@@ -1,0 +1,40 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.shibe-image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.shibe-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.shibe-image:hover {
+  transform: scale(1.1);
+}
+
+.shibe-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shibe-image-container:hover .shibe-image-overlay {
+  opacity: 1;
+}
